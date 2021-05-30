@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset= "utf-8">
+	<title>JavaScript Data Types Practice</title>
+</head>
+<body>
+	<!-- Number -->
+	<script>
+	var width = window.innerWidth;
+	var pi = 3.14;
+	</script>
+
+	<!-- String -->
+	<script>
+	var location = window.location;
+	var name = "Erin";
+	</script>
+
+	<!-- Boolean -->
+	<script>
+	var status = false;
+	var windowStatus = window.closed;
+	</script>
+
+	<!-- Object -->
+	<script>
+	var topic = document.getElementById('myID');
+	</script>
+
+	<!-- Array -->
+	<script>
+	var links = document.getElementsByTagName("a");
+	document.write(links[0]); //outputs undefined
+	</script>
+
+
+	<script>
+	var name;
+	name = prompt("What's your name: ");
+	document.write(name);
+	document.write("<h1>" + name + "<h1>");
+	document.write(name + 7 + "<br>");
+	document.write(document.title + "<br>");
+	var pars = document.getElementsByTagName("p");
+	document.write(pars + "<br>");
+	document.write(pars.length);
+	</script>
+</body>
+</html>

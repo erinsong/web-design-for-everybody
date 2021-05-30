@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Loops and Conditionals Practice</title>
+	<script type="text/javascript">
+	var grades= [2, 5, , , 9, 8, , 8];
+	var sum = 0;
+	var count = 0;
+
+	if (grades.length > 0) {
+		for (i=0; i<grades.length; i++) {
+			if (grades[i] != undefined) {
+				sum += grades[i];
+				count++;
+			}
+		}
+		document.write(sum/count);
+	} else {
+		document.write("Empty Array. No average to report.")
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

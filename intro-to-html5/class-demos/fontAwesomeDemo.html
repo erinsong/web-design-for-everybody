@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Font Awesome Demo</title>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/395c7e93d5.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Ready to use Font Awesome. Activate interlock. Dynotherms - connected. Infracells - up. Icons are go! -->
+    <i class="fas fa-thumbs-up"></i>
+    <i class="fas fa-thumbs-up fa-xs"></i>
+    <i class="fas fa-thumbs-up fa-md"></i>
+    <i class="fas fa-thumbs-up fa-lg"></i>
+    <i class="fas fa-thumbs-up fa-2x"></i>
+    <i class="fas fa-thumbs-up fa-3x"></i>
+    <i class="fas fa-thumbs-up fa-5x"></i>
+    <i class="fas fa-thumbs-up fa-10x"></i>
+
+    <br>
+
+    <!-- Using icon to link to website.
+    	Issue here is that it shows as an empty link (to a validator) bc there's no text. Screen readers would not be able to access it. -->
+    <a href="http://www.twitter.com"> <i class="fab fa-twitter fa-5x"></i></a>
+    <a href="http://www.pinterest.com"> <i class="fab fa-pinterest fa-5x"></i></a>
+    <a href="http://www.linkedin.com"> <i class="fab fa-linkedin fa-5x"></i></a>
+
+    <!-- Solution: add aria labels to a or i tag.
+    	Screen readers can now read the label and tell user what this image is linking to. -->
+    <a href="http://www.twitter.com" aria-label="Twitter"> <i class="fab fa-twitter fa-5x"></i></a>
+    <a href="http://www.pinterest.com" aria-label="Pinterest"> <i class="fab fa-pinterest fa-5x"></i></a>
+    <a href="http://www.linkedin.com" aria-label="Linkedin"> <i class="fab fa-linkedin fa-5x"></i></a>
+
+  </body>
+</html>

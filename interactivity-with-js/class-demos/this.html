@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript this Examples</title>
+	<style>
+		img {
+			height: 200px;
+		}
+		#output {
+			background: #2A73CC;
+			color: #FFF;
+			font-size: 50px;
+			padding: 15px;
+			margin: 30px 0;
+		}
+		.thumb {
+			border: 5px dotted black;
+			padding: 5px;
+			margin-right: 10%;
+		}
+	</style>
+	<script>
+	//log id name
+	function displayId(el) {
+		console.log(el.id);
+	}
+	//'print' alt text
+	function showProperties(el) {
+		document.getElementById("output").innerHTML = el.alt;
+	}
+	</script>
+</head>
+<body>
+	<!-- console log will display alt text -->
+	<img src="imgs/3dogs.jpeg" alt="3 smiling dogs" onclick="console.log(this.alt)">
+	<div onclick="console.log(this.innerHTML)">We are happy</div>
+
+	<!-- console log will display id name -->
+	<img src="imgs/grr.jpeg" alt="unhappy chihuahua" id="pic2" onclick="displayId(this)">
+	<div id="div2" onclick="displayId(this)">Grrrrrrrr!</div>
+
+	<!-- shows alt text of hovered image -->
+	<div id="output">Hover over an image from below to display the alt text</div>
+	<img class="thumb" src="imgs/3dogs.jpeg" alt="happy doggies :)" onmouseover="showProperties(this)" onmouseleave="document.getElementById('output').innerHTML = 'Hover over an image from below';">
+	<img class="thumb" src="imgs/grr.jpeg" alt="mean doggie >:(" onmouseover="showProperties(this)" onmouseleave="document.getElementById('output').innerHTML = 'Hover over an image from below';">
+
+</body>
+</html>

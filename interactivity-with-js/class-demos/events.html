@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Events Practice</title>
+	<script>
+	function message(msg) {
+		document.getElementById("output").innerHTML = msg + " event";
+	}
+	function date() {
+		document.getElementById("output").innerHTML = Date();
+	}
+	</script>
+</head>
+<body onload= "alert('Page is loaded')" onresize= "message('RESIZE')">
+	<h1>JavaScript Events - Responding to Events</h1>
+	<p onclick= "message('CLICK')"> Click me </p>
+	<p> Click on the paragraph above to trigger an <em>onclick</em> event.
+	Reload the page to see an onload event. </p>
+	<p id= "output"></p>
+	<button type= "button" onclick= "date()">Display Date</button>
+</body>
+</html>

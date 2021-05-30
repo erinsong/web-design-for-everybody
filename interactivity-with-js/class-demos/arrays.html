@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Arrays Practice</title>
+	<script type="text/javascript">
+	var fruits = ["Apple", "Banana", "Orange"];
+
+	function loadFruits() {
+		document.getElementById("fruits").innerHTML = fruits;
+	}
+
+	function addFruit() {
+		var fruit = prompt("What's your favorite fruit?");
+		fruits.push(fruit); // equivalent: fruits[fruits.length] = fruit;
+		document.getElementById("fruits").innerHTML = fruits;
+	}
+	</script>
+</head>
+<body onload="loadFruits()">
+	<button type="button" onclick="addFruit()">Add Favorite Fruit</button>
+	<p id="fruits"></p>
+</body>
+</html>

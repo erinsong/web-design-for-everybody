@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset= "utf-8">
+	<title>JavaScript Function Practice</title>
+</head>
+<body>
+	<script>
+	//function declarations example
+	function welcomeMsg() {
+		alert("Welcome to JavaScript!");
+	}
+
+	function printMsg(msg) {
+		alert(msg);
+	}
+
+	//function call example
+	welcomeMsg();
+
+	var x = "Hello";
+	printMsg(x);
+
+	x = "Goodbye";
+	printMsg(x);
+
+	//return value example
+	function greeting(msg) {
+		alert(msg);
+		var name = prompt("What's your name? ");
+		return name;
+	}
+
+	var firstName = greeting("Hi");
+	document.write("<h1>" + "Welcome " + firstName + "</h1>");
+	</script>
+</body>
+</html>
