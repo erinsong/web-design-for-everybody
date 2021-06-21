@@ -1,0 +1,104 @@
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+
+/* float part 1 css: clearing floats
+section {
+  float: left;
+  width: 63%;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}*/
+
+/* float part 2 css: clearing floats
+section {
+  float: left;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}*/
+
+/* float part 3 css: containing floats
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+footer {
+  margin-bottom: 0;
+}*/
+
+/*inline-block part 1s css: 3 section columns
+section {
+  display: inline-block;
+  margin: 0 1.5%;
+  width: 30%;
+}
+footer {
+  margin-bottom: 0;
+}*/
+
+/*relative positioning part 1 css: middle div will be offset to the right and down
+div {
+  height: 100px;
+  width: 100px;
+}
+.offset {
+  left: 20px;
+  position: relative;
+  top: 20px;
+}*/
+
+/*absolute positioning part 1 css: div offset to the left and down
+section {
+  position: relative;
+}
+div {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

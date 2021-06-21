@@ -1,0 +1,125 @@
+.box {
+  background: #2db34a;
+  border-radius: 6px;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+  transition-delay: 0s, 1s;
+}
+.box:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+}
+
+/* shorthand:
+.box {
+  background: #2db34a;
+  border-radius: 6px;
+  transition: background .2s linear, border-radius 1s ease-in 1s;
+}
+.box:hover {
+  color: #ff7b29;
+  border-radius: 50%;
+}*/
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+.card-container {
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+.stage {
+  background: #eaeaed;
+  border-radius: 6px;
+  height: 150px;
+  position: relative;
+  min-width: 538px;
+}
+/* simple:
+.stage:hover .ball {
+  animation: slide 2s linear;
+}*/
+/* custom:
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}*/
+/* shorthand:
+.stage:hover .ball {
+  animation: slide 2s ease-in-out .5s infinite alternate;
+}*/
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+.ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+
